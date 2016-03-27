@@ -53,11 +53,11 @@ app.on('ready', function() {
   if (env.name === 'test') {
     mainWindow.loadURL('file://' + __dirname + '/spec.html');
   } else if (env.name === 'DEV') {
-    mainWindow.loadURL('file://' + __dirname + '/app.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
   } else if (env.name === 'TST') {
-    mainWindow.loadURL('file://' + __dirname + '/app.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
   } else {
-    mainWindow.loadURL('file://' + __dirname + '/app.html');
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
   }
 
   //Set Main Toolbar Menu
